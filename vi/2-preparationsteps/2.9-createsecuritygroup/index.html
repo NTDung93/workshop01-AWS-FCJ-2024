@@ -12,21 +12,21 @@
     <title>Tạo Security Group :: Bắt đầu với Amazon VPC và AWS VPN Site to Site</title>
 
     
-    <link href="/workshop01-AWS-FCJ-2024/css/nucleus.css?1710583217" rel="stylesheet">
-    <link href="/workshop01-AWS-FCJ-2024/css/fontawesome-all.min.css?1710583217" rel="stylesheet">
-    <link href="/workshop01-AWS-FCJ-2024/css/hybrid.css?1710583217" rel="stylesheet">
-    <link href="/workshop01-AWS-FCJ-2024/css/featherlight.min.css?1710583217" rel="stylesheet">
-    <link href="/workshop01-AWS-FCJ-2024/css/perfect-scrollbar.min.css?1710583217" rel="stylesheet">
-    <link href="/workshop01-AWS-FCJ-2024/css/auto-complete.css?1710583217" rel="stylesheet">
-    <link href="/workshop01-AWS-FCJ-2024/css/atom-one-dark-reasonable.css?1710583217" rel="stylesheet">
-    <link href="/workshop01-AWS-FCJ-2024/css/theme.css?1710583217" rel="stylesheet">
-    <link href="/workshop01-AWS-FCJ-2024/css/hugo-theme.css?1710583217" rel="stylesheet">
+    <link href="/workshop01-AWS-FCJ-2024/css/nucleus.css?1710583789" rel="stylesheet">
+    <link href="/workshop01-AWS-FCJ-2024/css/fontawesome-all.min.css?1710583789" rel="stylesheet">
+    <link href="/workshop01-AWS-FCJ-2024/css/hybrid.css?1710583789" rel="stylesheet">
+    <link href="/workshop01-AWS-FCJ-2024/css/featherlight.min.css?1710583789" rel="stylesheet">
+    <link href="/workshop01-AWS-FCJ-2024/css/perfect-scrollbar.min.css?1710583789" rel="stylesheet">
+    <link href="/workshop01-AWS-FCJ-2024/css/auto-complete.css?1710583789" rel="stylesheet">
+    <link href="/workshop01-AWS-FCJ-2024/css/atom-one-dark-reasonable.css?1710583789" rel="stylesheet">
+    <link href="/workshop01-AWS-FCJ-2024/css/theme.css?1710583789" rel="stylesheet">
+    <link href="/workshop01-AWS-FCJ-2024/css/hugo-theme.css?1710583789" rel="stylesheet">
     
-    <link href="/workshop01-AWS-FCJ-2024/css/theme-workshop.css?1710583217" rel="stylesheet">
+    <link href="/workshop01-AWS-FCJ-2024/css/theme-workshop.css?1710583789" rel="stylesheet">
     
     
 
-    <script src="/workshop01-AWS-FCJ-2024/js/jquery-3.3.1.min.js?1710583217"></script>
+    <script src="/workshop01-AWS-FCJ-2024/js/jquery-3.3.1.min.js?1710583789"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/workshop01-AWS-FCJ-2024/js/lunr.min.js?1710583217"></script>
-<script type="text/javascript" src="/workshop01-AWS-FCJ-2024/js/auto-complete.js?1710583217"></script>
+<script type="text/javascript" src="/workshop01-AWS-FCJ-2024/js/lunr.min.js?1710583789"></script>
+<script type="text/javascript" src="/workshop01-AWS-FCJ-2024/js/auto-complete.js?1710583789"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/ntdung93.github.io\/workshop01-AWS-FCJ-2024\/\/vi";
     
 </script>
-<script type="text/javascript" src="/workshop01-AWS-FCJ-2024/js/search.js?1710583217"></script>
+<script type="text/javascript" src="/workshop01-AWS-FCJ-2024/js/search.js?1710583789"></script>
 
     
   </div>
@@ -1433,14 +1433,14 @@
 <ol>
 <li>
 <p>Ở giao diện VPC, chọn <strong>Security groups</strong> ở sidebar, sau đó click <strong>Create security group</strong> để tạo SG cho <strong>ELB (Elastic load balancer)</strong> chuẩn bị tạo
-<img alt="Create security group" src="/images/2-9/01.png?width=50pc"></p>
+<img alt="Create security group" src="/workshop01-AWS-FCJ-2024/images/2-9/01.png?width=50pc"></p>
 </li>
 <li>
 <p>Ở giao diện tạo security group:</p>
 <ul>
 <li><strong>Name</strong> điền <strong><code>InternetFacing-LB-SG</code></strong></li>
 <li><strong>Description</strong> điền <strong><code>External load balancer security group</code></strong>
-<img alt="Create security group" src="/images/2-9/02.png?width=50pc"></li>
+<img alt="Create security group" src="/workshop01-AWS-FCJ-2024/images/2-9/02.png?width=50pc"></li>
 </ul>
 </li>
 <li>
@@ -1449,49 +1449,49 @@
 <li><strong>Rule đầu tiên</strong> cho phép truy cập <strong>HTTP</strong>, và <strong>Source: Anywhere-IPv4</strong></li>
 <li><strong>Rule thứ hai</strong> cho phép <strong>SSH</strong> từ <strong>My IP</strong> tức IP cá nhân, sẽ thay đổi khi bạn thay đổi mạng</li>
 <li><strong>Rule cuối Type: All ICMP - IPv4</strong> và <strong>Source: Anywhere-IPv4</strong> cho phép ping từ bất kì địa chỉ IP nào
-<img alt="Create security group" src="/images/2-9/03.png?width=50pc"></li>
+<img alt="Create security group" src="/workshop01-AWS-FCJ-2024/images/2-9/03.png?width=50pc"></li>
 </ul>
 </li>
 <li>
 <p>Kéo xuống cuối và click <strong>Create security group</strong>
-<img alt="Create security group" src="/images/2-9/04.png?width=50pc"></p>
+<img alt="Create security group" src="/workshop01-AWS-FCJ-2024/images/2-9/04.png?width=50pc"></p>
 </li>
 <li>
 <p>Hoàn thành tạo SG cho ELB
-<img alt="Create security group" src="/images/2-9/05.png?width=50pc"></p>
+<img alt="Create security group" src="/workshop01-AWS-FCJ-2024/images/2-9/05.png?width=50pc"></p>
 </li>
 </ol>
 <h4 id="tạo-sg-cho-web-tier">Tạo SG cho Web tier</h4>
 <ol start="6">
 <li>
 <p>Lặp lại các bước trên để tạo SG cho <strong>Web tier</strong> (tầng present với user, có thể hiểu như front-end)
-<img alt="Create security group" src="/images/2-9/06.png?width=50pc"></p>
+<img alt="Create security group" src="/workshop01-AWS-FCJ-2024/images/2-9/06.png?width=50pc"></p>
 </li>
 <li>
 <p>Thiết lập <strong>Inbound rules</strong>, bằng cách thêm các rule sau:</p>
 <ul>
 <li><strong>Rule đầu tiên</strong> cho phép truy cập bằng <strong>HTTP</strong> nhưng chỉ với source từ <strong>InternetFacing-LB-SG</strong> ta vừa tạo ở trên (theo cấu trúc đã thiết kế)</li>
 <li>Các rule sau tương tự như tạo SG cho ELB
-<img alt="Create security group" src="/images/2-9/07.png?width=50pc"></li>
+<img alt="Create security group" src="/workshop01-AWS-FCJ-2024/images/2-9/07.png?width=50pc"></li>
 </ul>
 </li>
 <li>
 <p>Kéo xuống dưới cùng và click <strong>Create security group</strong>
-<img alt="Create security group" src="/images/2-9/08.png?width=50pc"></p>
+<img alt="Create security group" src="/workshop01-AWS-FCJ-2024/images/2-9/08.png?width=50pc"></p>
 </li>
 </ol>
 <h4 id="tạo-sg-cho-internal-load-balancer">Tạo SG cho Internal load balancer</h4>
 <ol start="9">
 <li>
 <p>Tạo SG thứ 3 dành cho <strong>Internal load balancer</strong>
-<img alt="Create security group" src="/images/2-9/09.png?width=50pc"></p>
+<img alt="Create security group" src="/workshop01-AWS-FCJ-2024/images/2-9/09.png?width=50pc"></p>
 </li>
 <li>
 <p>Cài đặt <strong>Inbound rules</strong>:</p>
 <ul>
 <li><strong>Type: HTTP</strong> chọn <strong>Source: WebTier-SG</strong> cho phép truy cập HTTP từ SG của web tier</li>
 <li>Sau đó click <strong>Create security group</strong>
-<img alt="Create security group" src="/images/2-9/10.png?width=50pc"></li>
+<img alt="Create security group" src="/workshop01-AWS-FCJ-2024/images/2-9/10.png?width=50pc"></li>
 </ul>
 </li>
 </ol>
@@ -1499,7 +1499,7 @@
 <ol start="11">
 <li>
 <p>Tạo SG thứ 4 cho <strong>App tier</strong> (các private instances)
-<img alt="Create security group" src="/images/2-9/11.png?width=50pc"></p>
+<img alt="Create security group" src="/workshop01-AWS-FCJ-2024/images/2-9/11.png?width=50pc"></p>
 </li>
 <li>
 <p>Cài đặt <strong>Inbound rules</strong>:</p>
@@ -1507,7 +1507,7 @@
 <li><strong>Type: Custom TCP, Port: 8080</strong> và <strong>Source: Internal-LB-SG</strong> cho phép traffic từ internal load balancer đi vào</li>
 <li>Và 2 rule tương tự nhưng <strong>Source: Anywhere-IPv4</strong> và <strong>My IP</strong></li>
 <li>Sau đó click <strong>Create security group</strong>
-<img alt="Create security group" src="/images/2-9/12.png?width=50pc"></li>
+<img alt="Create security group" src="/workshop01-AWS-FCJ-2024/images/2-9/12.png?width=50pc"></li>
 </ul>
 </li>
 </ol>
@@ -1515,21 +1515,21 @@
 <ol start="13">
 <li>
 <p>Tạo SG thứ 5 cho <strong>Data tier</strong> (các private instances chứa MySql)
-<img alt="Create security group" src="/images/2-9/13.png?width=50pc"></p>
+<img alt="Create security group" src="/workshop01-AWS-FCJ-2024/images/2-9/13.png?width=50pc"></p>
 </li>
 <li>
 <p>Cài đặt <strong>Inbound rules</strong>:</p>
 <ul>
 <li><strong>Type: MYSQL/Aurora</strong> và <strong>Source: AppTier-SG</strong> cho phép traffic từ App tier đi vào</li>
 <li>Sau đó click <strong>Create security group</strong>
-<img alt="Create security group" src="/images/2-9/14.png?width=50pc"></li>
+<img alt="Create security group" src="/workshop01-AWS-FCJ-2024/images/2-9/14.png?width=50pc"></li>
 <li>Có thể thêm 2 rule nữa như hình để có thể <strong>connect db instance</strong> từ ngoài vpc (với mục đích test)
-<img alt="Create security group" src="/images/2-9/15.png?width=50pc"></li>
+<img alt="Create security group" src="/workshop01-AWS-FCJ-2024/images/2-9/15.png?width=50pc"></li>
 </ul>
 </li>
 <li>
 <p>Hoàn thành tạo 5 SG cho cấu trúc đã thiết kế
-<img alt="Create security group" src="/images/2-9/16.png?width=50pc"></p>
+<img alt="Create security group" src="/workshop01-AWS-FCJ-2024/images/2-9/16.png?width=50pc"></p>
 </li>
 </ol>
 
@@ -2238,19 +2238,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/workshop01-AWS-FCJ-2024/js/clipboard.min.js?1710583217"></script>
-    <script src="/workshop01-AWS-FCJ-2024/js/perfect-scrollbar.min.js?1710583217"></script>
-    <script src="/workshop01-AWS-FCJ-2024/js/perfect-scrollbar.jquery.min.js?1710583217"></script>
-    <script src="/workshop01-AWS-FCJ-2024/js/jquery.sticky.js?1710583217"></script>
-    <script src="/workshop01-AWS-FCJ-2024/js/featherlight.min.js?1710583217"></script>
-    <script src="/workshop01-AWS-FCJ-2024/js/highlight.pack.js?1710583217"></script>
+    <script src="/workshop01-AWS-FCJ-2024/js/clipboard.min.js?1710583789"></script>
+    <script src="/workshop01-AWS-FCJ-2024/js/perfect-scrollbar.min.js?1710583789"></script>
+    <script src="/workshop01-AWS-FCJ-2024/js/perfect-scrollbar.jquery.min.js?1710583789"></script>
+    <script src="/workshop01-AWS-FCJ-2024/js/jquery.sticky.js?1710583789"></script>
+    <script src="/workshop01-AWS-FCJ-2024/js/featherlight.min.js?1710583789"></script>
+    <script src="/workshop01-AWS-FCJ-2024/js/highlight.pack.js?1710583789"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/workshop01-AWS-FCJ-2024/js/modernizr.custom-3.6.0.js?1710583217"></script>
-    <script src="/workshop01-AWS-FCJ-2024/js/learn.js?1710583217"></script>
-    <script src="/workshop01-AWS-FCJ-2024/js/hugo-learn.js?1710583217"></script>
+    <script src="/workshop01-AWS-FCJ-2024/js/modernizr.custom-3.6.0.js?1710583789"></script>
+    <script src="/workshop01-AWS-FCJ-2024/js/learn.js?1710583789"></script>
+    <script src="/workshop01-AWS-FCJ-2024/js/hugo-learn.js?1710583789"></script>
 
-    <link href="/workshop01-AWS-FCJ-2024/mermaid/mermaid.css?1710583217" rel="stylesheet" />
-    <script src="/workshop01-AWS-FCJ-2024/mermaid/mermaid.js?1710583217"></script>
+    <link href="/workshop01-AWS-FCJ-2024/mermaid/mermaid.css?1710583789" rel="stylesheet" />
+    <script src="/workshop01-AWS-FCJ-2024/mermaid/mermaid.js?1710583789"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -12,21 +12,21 @@
     <title>Tạo Route Table :: Bắt đầu với Amazon VPC và AWS VPN Site to Site</title>
 
     
-    <link href="/workshop01-AWS-FCJ-2024/css/nucleus.css?1710583217" rel="stylesheet">
-    <link href="/workshop01-AWS-FCJ-2024/css/fontawesome-all.min.css?1710583217" rel="stylesheet">
-    <link href="/workshop01-AWS-FCJ-2024/css/hybrid.css?1710583217" rel="stylesheet">
-    <link href="/workshop01-AWS-FCJ-2024/css/featherlight.min.css?1710583217" rel="stylesheet">
-    <link href="/workshop01-AWS-FCJ-2024/css/perfect-scrollbar.min.css?1710583217" rel="stylesheet">
-    <link href="/workshop01-AWS-FCJ-2024/css/auto-complete.css?1710583217" rel="stylesheet">
-    <link href="/workshop01-AWS-FCJ-2024/css/atom-one-dark-reasonable.css?1710583217" rel="stylesheet">
-    <link href="/workshop01-AWS-FCJ-2024/css/theme.css?1710583217" rel="stylesheet">
-    <link href="/workshop01-AWS-FCJ-2024/css/hugo-theme.css?1710583217" rel="stylesheet">
+    <link href="/workshop01-AWS-FCJ-2024/css/nucleus.css?1710583789" rel="stylesheet">
+    <link href="/workshop01-AWS-FCJ-2024/css/fontawesome-all.min.css?1710583789" rel="stylesheet">
+    <link href="/workshop01-AWS-FCJ-2024/css/hybrid.css?1710583789" rel="stylesheet">
+    <link href="/workshop01-AWS-FCJ-2024/css/featherlight.min.css?1710583789" rel="stylesheet">
+    <link href="/workshop01-AWS-FCJ-2024/css/perfect-scrollbar.min.css?1710583789" rel="stylesheet">
+    <link href="/workshop01-AWS-FCJ-2024/css/auto-complete.css?1710583789" rel="stylesheet">
+    <link href="/workshop01-AWS-FCJ-2024/css/atom-one-dark-reasonable.css?1710583789" rel="stylesheet">
+    <link href="/workshop01-AWS-FCJ-2024/css/theme.css?1710583789" rel="stylesheet">
+    <link href="/workshop01-AWS-FCJ-2024/css/hugo-theme.css?1710583789" rel="stylesheet">
     
-    <link href="/workshop01-AWS-FCJ-2024/css/theme-workshop.css?1710583217" rel="stylesheet">
+    <link href="/workshop01-AWS-FCJ-2024/css/theme-workshop.css?1710583789" rel="stylesheet">
     
     
 
-    <script src="/workshop01-AWS-FCJ-2024/js/jquery-3.3.1.min.js?1710583217"></script>
+    <script src="/workshop01-AWS-FCJ-2024/js/jquery-3.3.1.min.js?1710583789"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/workshop01-AWS-FCJ-2024/js/lunr.min.js?1710583217"></script>
-<script type="text/javascript" src="/workshop01-AWS-FCJ-2024/js/auto-complete.js?1710583217"></script>
+<script type="text/javascript" src="/workshop01-AWS-FCJ-2024/js/lunr.min.js?1710583789"></script>
+<script type="text/javascript" src="/workshop01-AWS-FCJ-2024/js/auto-complete.js?1710583789"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/ntdung93.github.io\/workshop01-AWS-FCJ-2024\/\/vi";
     
 </script>
-<script type="text/javascript" src="/workshop01-AWS-FCJ-2024/js/search.js?1710583217"></script>
+<script type="text/javascript" src="/workshop01-AWS-FCJ-2024/js/search.js?1710583789"></script>
 
     
   </div>
@@ -1433,7 +1433,7 @@
 <ol>
 <li>
 <p>Tại giao diện của VPC, click chọn <strong>Route tables</strong> ở sidebar và click <strong>Create route table</strong>
-<img alt="Create route table" src="/images/2-8/01.png?width=50pc"></p>
+<img alt="Create route table" src="/workshop01-AWS-FCJ-2024/images/2-8/01.png?width=50pc"></p>
 </li>
 <li>
 <p>Tại giao diện Create route table:</p>
@@ -1441,40 +1441,40 @@
 <li><strong>Name</strong> nhập <strong><code>public-route-table</code></strong></li>
 <li><strong>VPC</strong> chọn <strong>my-vpc</strong></li>
 <li>Click <strong>Create route table</strong>
-<img alt="Create route table" src="/images/2-8/02.png?width=50pc"></li>
+<img alt="Create route table" src="/workshop01-AWS-FCJ-2024/images/2-8/02.png?width=50pc"></li>
 </ul>
 </li>
 <li>
 <p>Sau khi tạo thành công route table, click <strong>Edit routes</strong>
-<img alt="Edit routes" src="/images/2-8/03.png?width=50pc"></p>
+<img alt="Edit routes" src="/workshop01-AWS-FCJ-2024/images/2-8/03.png?width=50pc"></p>
 </li>
 <li>
 <p>Ở màn hình Edit routes, chọn <strong>Add route</strong>
-<img alt="Add route" src="/images/2-8/04.png?width=50pc"></p>
+<img alt="Add route" src="/workshop01-AWS-FCJ-2024/images/2-8/04.png?width=50pc"></p>
 </li>
 <li>
 <p>Sau đó thêm route với <strong>Destination</strong> là <strong><code>0.0.0.0/0</code></strong> và <strong>Target</strong> là <strong>workshop-01-igw</strong> sau đó click <strong>Save changes</strong>
-<img alt="Add route" src="/images/2-8/05.png?width=50pc"></p>
+<img alt="Add route" src="/workshop01-AWS-FCJ-2024/images/2-8/05.png?width=50pc"></p>
 </li>
 <li>
 <p>Sau khi tạo thành công, chuyển qua tab <strong>Subnet associations</strong> và click <strong>Edit subnet associations</strong>
-<img alt="Edit subnet associations" src="/images/2-8/06.png?width=50pc"></p>
+<img alt="Edit subnet associations" src="/workshop01-AWS-FCJ-2024/images/2-8/06.png?width=50pc"></p>
 </li>
 <li>
 <p>Chọn 2 public subnet ta đã tạo rồi click <strong>Save associations</strong>
-<img alt="Edit subnet associations" src="/images/2-8/07.png?width=50pc"></p>
+<img alt="Edit subnet associations" src="/workshop01-AWS-FCJ-2024/images/2-8/07.png?width=50pc"></p>
 </li>
 <li>
 <p>Thực hiện tương tự các bước trên để tạo ra <strong>private-route-table-01</strong> cho <strong>private subnet 1</strong>
-<img alt="Create route table" src="/images/2-8/08.png?width=50pc"></p>
+<img alt="Create route table" src="/workshop01-AWS-FCJ-2024/images/2-8/08.png?width=50pc"></p>
 </li>
 <li>
 <p>Thêm route với <strong>Destination</strong> là <strong><code>0.0.0.0/0</code></strong> và <strong>Target</strong> là <strong>nat-gw-01</strong> sau đó click <strong>Save changes</strong>
-<img alt="Add route" src="/images/2-8/09.png?width=50pc"></p>
+<img alt="Add route" src="/workshop01-AWS-FCJ-2024/images/2-8/09.png?width=50pc"></p>
 </li>
 <li>
 <p>Chọn <strong>private subnet 1</strong> rồi click <strong>Save associations</strong>
-<img alt="Edit subnet associations" src="/images/2-8/10.png?width=50pc"></p>
+<img alt="Edit subnet associations" src="/workshop01-AWS-FCJ-2024/images/2-8/10.png?width=50pc"></p>
 </li>
 </ol>
 <h4 id="tạo-route-table-cho-2-private-db-subnet">Tạo route table cho 2 private db subnet</h4>
@@ -1484,7 +1484,7 @@
 <li><strong>VPC</strong> chọn <strong>my-vpc</strong></li>
 <li>Thêm route với <strong>Destination</strong> là <strong><code>0.0.0.0/0</code></strong> và <strong>Target</strong> là <strong>igw</strong> đã tạo (mục đích để có thể giao tiếp với db instance từ internet ngoài vpc)</li>
 <li>Thực hiện gán route table này cho 2 subnet là <strong>Private DB Subnet 1</strong> và <strong>Private DB Subnet 2</strong>
-<img alt="Create route table" src="/images/2-8/11.png?width=50pc"></li>
+<img alt="Create route table" src="/workshop01-AWS-FCJ-2024/images/2-8/11.png?width=50pc"></li>
 </ul>
 </li>
 </ol>
@@ -2194,19 +2194,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/workshop01-AWS-FCJ-2024/js/clipboard.min.js?1710583217"></script>
-    <script src="/workshop01-AWS-FCJ-2024/js/perfect-scrollbar.min.js?1710583217"></script>
-    <script src="/workshop01-AWS-FCJ-2024/js/perfect-scrollbar.jquery.min.js?1710583217"></script>
-    <script src="/workshop01-AWS-FCJ-2024/js/jquery.sticky.js?1710583217"></script>
-    <script src="/workshop01-AWS-FCJ-2024/js/featherlight.min.js?1710583217"></script>
-    <script src="/workshop01-AWS-FCJ-2024/js/highlight.pack.js?1710583217"></script>
+    <script src="/workshop01-AWS-FCJ-2024/js/clipboard.min.js?1710583789"></script>
+    <script src="/workshop01-AWS-FCJ-2024/js/perfect-scrollbar.min.js?1710583789"></script>
+    <script src="/workshop01-AWS-FCJ-2024/js/perfect-scrollbar.jquery.min.js?1710583789"></script>
+    <script src="/workshop01-AWS-FCJ-2024/js/jquery.sticky.js?1710583789"></script>
+    <script src="/workshop01-AWS-FCJ-2024/js/featherlight.min.js?1710583789"></script>
+    <script src="/workshop01-AWS-FCJ-2024/js/highlight.pack.js?1710583789"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/workshop01-AWS-FCJ-2024/js/modernizr.custom-3.6.0.js?1710583217"></script>
-    <script src="/workshop01-AWS-FCJ-2024/js/learn.js?1710583217"></script>
-    <script src="/workshop01-AWS-FCJ-2024/js/hugo-learn.js?1710583217"></script>
+    <script src="/workshop01-AWS-FCJ-2024/js/modernizr.custom-3.6.0.js?1710583789"></script>
+    <script src="/workshop01-AWS-FCJ-2024/js/learn.js?1710583789"></script>
+    <script src="/workshop01-AWS-FCJ-2024/js/hugo-learn.js?1710583789"></script>
 
-    <link href="/workshop01-AWS-FCJ-2024/mermaid/mermaid.css?1710583217" rel="stylesheet" />
-    <script src="/workshop01-AWS-FCJ-2024/mermaid/mermaid.js?1710583217"></script>
+    <link href="/workshop01-AWS-FCJ-2024/mermaid/mermaid.css?1710583789" rel="stylesheet" />
+    <script src="/workshop01-AWS-FCJ-2024/mermaid/mermaid.js?1710583789"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

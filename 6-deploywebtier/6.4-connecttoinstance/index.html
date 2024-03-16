@@ -12,21 +12,21 @@
     <title>Connect to EC2 instance :: Start with Amazon VPC and AWS VPN Site-to-Site.</title>
 
     
-    <link href="/workshop01-AWS-FCJ-2024/css/nucleus.css?1710583217" rel="stylesheet">
-    <link href="/workshop01-AWS-FCJ-2024/css/fontawesome-all.min.css?1710583217" rel="stylesheet">
-    <link href="/workshop01-AWS-FCJ-2024/css/hybrid.css?1710583217" rel="stylesheet">
-    <link href="/workshop01-AWS-FCJ-2024/css/featherlight.min.css?1710583217" rel="stylesheet">
-    <link href="/workshop01-AWS-FCJ-2024/css/perfect-scrollbar.min.css?1710583217" rel="stylesheet">
-    <link href="/workshop01-AWS-FCJ-2024/css/auto-complete.css?1710583217" rel="stylesheet">
-    <link href="/workshop01-AWS-FCJ-2024/css/atom-one-dark-reasonable.css?1710583217" rel="stylesheet">
-    <link href="/workshop01-AWS-FCJ-2024/css/theme.css?1710583217" rel="stylesheet">
-    <link href="/workshop01-AWS-FCJ-2024/css/hugo-theme.css?1710583217" rel="stylesheet">
+    <link href="/workshop01-AWS-FCJ-2024/css/nucleus.css?1710583789" rel="stylesheet">
+    <link href="/workshop01-AWS-FCJ-2024/css/fontawesome-all.min.css?1710583789" rel="stylesheet">
+    <link href="/workshop01-AWS-FCJ-2024/css/hybrid.css?1710583789" rel="stylesheet">
+    <link href="/workshop01-AWS-FCJ-2024/css/featherlight.min.css?1710583789" rel="stylesheet">
+    <link href="/workshop01-AWS-FCJ-2024/css/perfect-scrollbar.min.css?1710583789" rel="stylesheet">
+    <link href="/workshop01-AWS-FCJ-2024/css/auto-complete.css?1710583789" rel="stylesheet">
+    <link href="/workshop01-AWS-FCJ-2024/css/atom-one-dark-reasonable.css?1710583789" rel="stylesheet">
+    <link href="/workshop01-AWS-FCJ-2024/css/theme.css?1710583789" rel="stylesheet">
+    <link href="/workshop01-AWS-FCJ-2024/css/hugo-theme.css?1710583789" rel="stylesheet">
     
-    <link href="/workshop01-AWS-FCJ-2024/css/theme-workshop.css?1710583217" rel="stylesheet">
+    <link href="/workshop01-AWS-FCJ-2024/css/theme-workshop.css?1710583789" rel="stylesheet">
     
     
 
-    <script src="/workshop01-AWS-FCJ-2024/js/jquery-3.3.1.min.js?1710583217"></script>
+    <script src="/workshop01-AWS-FCJ-2024/js/jquery-3.3.1.min.js?1710583789"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/workshop01-AWS-FCJ-2024/js/lunr.min.js?1710583217"></script>
-<script type="text/javascript" src="/workshop01-AWS-FCJ-2024/js/auto-complete.js?1710583217"></script>
+<script type="text/javascript" src="/workshop01-AWS-FCJ-2024/js/lunr.min.js?1710583789"></script>
+<script type="text/javascript" src="/workshop01-AWS-FCJ-2024/js/auto-complete.js?1710583789"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/ntdung93.github.io\/workshop01-AWS-FCJ-2024\/";
     
 </script>
-<script type="text/javascript" src="/workshop01-AWS-FCJ-2024/js/search.js?1710583217"></script>
+<script type="text/javascript" src="/workshop01-AWS-FCJ-2024/js/search.js?1710583789"></script>
 
     
   </div>
@@ -1433,24 +1433,24 @@
 <ol>
 <li>
 <p>Similar to connecting to the app server instance, we connect through <strong>Session manager</strong>.
-<img src="../../../images/6-4/01.png?width=50pc"></p>
+<img src="/workshop01-AWS-FCJ-2024/images/6-4/01.png?width=50pc"></p>
 </li>
 <li>
 <p>Switch to ec2-user.
-<img src="../../../images/6-4/02.png?width=50pc"></p>
+<img src="/workshop01-AWS-FCJ-2024/images/6-4/02.png?width=50pc"></p>
 </li>
 <li>
 <p>Check the connection by pinging the ip of the Google DNS server → connected to the internet through IGW.
-<img src="../../../images/6-4/03.png?width=50pc"></p>
+<img src="/workshop01-AWS-FCJ-2024/images/6-4/03.png?width=50pc"></p>
 </li>
 <li>
 <p>Download <strong>NPM</strong> to the instance:</p>
 <ul>
 <li><strong><code>curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash</code></strong></li>
 <li><strong><code>source ~/.bashrc</code></strong> to reload the bash shell configuration file to apply the npm just downloaded
-<img src="../../../images/6-4/04.png?width=50pc"></li>
+<img src="/workshop01-AWS-FCJ-2024/images/6-4/04.png?width=50pc"></li>
 <li>Run <strong><code>nvm install 16</code></strong> then run <strong><code>nvm use 16</code></strong> to download and use <strong>Node.js version 16</strong>
-<img src="../../../images/6-4/05.png?width=50pc"></li>
+<img src="/workshop01-AWS-FCJ-2024/images/6-4/05.png?width=50pc"></li>
 </ul>
 </li>
 <li>
@@ -1458,7 +1458,7 @@
 <ul>
 <li><strong><code>cd</code></strong> to go to the <strong>user’s home directory</strong></li>
 <li><strong><code>aws s3 cp s3://demowebapp-workshop-01/library-app-fe/ web-tier --recursive</code></strong> to copy all files from the library-app-fe folder and its sub-folders to the web-tier folder on the instance (if the web-tier folder does not exist, the instance will automatically create a new folder)
-<img src="../../../images/6-4/06.png?width=50pc"></li>
+<img src="/workshop01-AWS-FCJ-2024/images/6-4/06.png?width=50pc"></li>
 </ul>
 </li>
 <li>
@@ -1466,12 +1466,12 @@
 <ul>
 <li><strong><code>cd web-tier</code></strong> to access the folder</li>
 <li><strong><code>ls -ltr</code></strong> to list the files and sub-folders of web-tier
-<img src="../../../images/6-4/07.png?width=50pc"></li>
+<img src="/workshop01-AWS-FCJ-2024/images/6-4/07.png?width=50pc"></li>
 <li><strong><code>npm install</code></strong> to download the necessary libraries or dependencies
-<img src="../../../images/6-4/08.png?width=50pc">
-<img src="../../../images/6-4/09.png?width=50pc"></li>
+<img src="/workshop01-AWS-FCJ-2024/images/6-4/08.png?width=50pc">
+<img src="/workshop01-AWS-FCJ-2024/images/6-4/09.png?width=50pc"></li>
 <li><strong><code>npm run build</code></strong> to build the source code
-<img src="../../../images/6-4/10.png?width=50pc"></li>
+<img src="/workshop01-AWS-FCJ-2024/images/6-4/10.png?width=50pc"></li>
 <li><strong><code>sudo amazon-linux-extras install nginx1 -y</code></strong> to download nginx (nginx acts as a web server to help the app run on port 80, as well as help direct API calls to the internal load balancer)</li>
 </ul>
 </li>
@@ -1481,10 +1481,10 @@
 <li><strong><code>cd /etc/nginx</code></strong></li>
 <li><strong><code>ls</code></strong></li>
 <li>We will see the <strong>nginx.conf</strong> file in the nginx folder. We need to <strong>delete</strong> this file and <strong>replace</strong> it with the file we have configured and uploaded to the s3 bucket.
-<img src="../../../images/6-4/11.png?width=50pc"></li>
+<img src="/workshop01-AWS-FCJ-2024/images/6-4/11.png?width=50pc"></li>
 <li><strong><code>sudo rm nginx.conf</code></strong></li>
 <li><strong><code>sudo aws s3 cp s3://demowebapp-workshop-01/nginx.conf .</code></strong> to copy the file from the bucket to the nginx folder
-<img src="../../../images/6-4/12.png?width=50pc"></li>
+<img src="/workshop01-AWS-FCJ-2024/images/6-4/12.png?width=50pc"></li>
 <li><strong><code>sudo service nginx restart</code></strong> to restart Nginx</li>
 <li><strong><code>chmod -R 755 /home/ec2-user</code></strong> to grant Nginx access to all files</li>
 <li><strong><code>sudo chkconfig nginx on</code></strong> to run the Nginx service automatically every time the instance restarts</li>
@@ -2197,19 +2197,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/workshop01-AWS-FCJ-2024/js/clipboard.min.js?1710583217"></script>
-    <script src="/workshop01-AWS-FCJ-2024/js/perfect-scrollbar.min.js?1710583217"></script>
-    <script src="/workshop01-AWS-FCJ-2024/js/perfect-scrollbar.jquery.min.js?1710583217"></script>
-    <script src="/workshop01-AWS-FCJ-2024/js/jquery.sticky.js?1710583217"></script>
-    <script src="/workshop01-AWS-FCJ-2024/js/featherlight.min.js?1710583217"></script>
-    <script src="/workshop01-AWS-FCJ-2024/js/highlight.pack.js?1710583217"></script>
+    <script src="/workshop01-AWS-FCJ-2024/js/clipboard.min.js?1710583789"></script>
+    <script src="/workshop01-AWS-FCJ-2024/js/perfect-scrollbar.min.js?1710583789"></script>
+    <script src="/workshop01-AWS-FCJ-2024/js/perfect-scrollbar.jquery.min.js?1710583789"></script>
+    <script src="/workshop01-AWS-FCJ-2024/js/jquery.sticky.js?1710583789"></script>
+    <script src="/workshop01-AWS-FCJ-2024/js/featherlight.min.js?1710583789"></script>
+    <script src="/workshop01-AWS-FCJ-2024/js/highlight.pack.js?1710583789"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/workshop01-AWS-FCJ-2024/js/modernizr.custom-3.6.0.js?1710583217"></script>
-    <script src="/workshop01-AWS-FCJ-2024/js/learn.js?1710583217"></script>
-    <script src="/workshop01-AWS-FCJ-2024/js/hugo-learn.js?1710583217"></script>
+    <script src="/workshop01-AWS-FCJ-2024/js/modernizr.custom-3.6.0.js?1710583789"></script>
+    <script src="/workshop01-AWS-FCJ-2024/js/learn.js?1710583789"></script>
+    <script src="/workshop01-AWS-FCJ-2024/js/hugo-learn.js?1710583789"></script>
 
-    <link href="/workshop01-AWS-FCJ-2024/mermaid/mermaid.css?1710583217" rel="stylesheet" />
-    <script src="/workshop01-AWS-FCJ-2024/mermaid/mermaid.js?1710583217"></script>
+    <link href="/workshop01-AWS-FCJ-2024/mermaid/mermaid.css?1710583789" rel="stylesheet" />
+    <script src="/workshop01-AWS-FCJ-2024/mermaid/mermaid.js?1710583789"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
