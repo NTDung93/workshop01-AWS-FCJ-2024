@@ -102,7 +102,7 @@
 	"title": "Preparation Steps",
 	"tags": [],
 	"description": "",
-	"content": "Firewall in VPC In this section, we will setup the necessary and important things to perform this workshop.\nContents Clone code from GitHub Create S3 Bucket Create EC2 role Create VPC Create Subnet Create Internet Gateway Create NAT Gateway Create Route Table Create Security Group "
+	"content": "In this section, we will setup the necessary and important things to perform this workshop.\nContents Clone code from GitHub Create S3 Bucket Create EC2 role Create VPC Create Subnet Create Internet Gateway Create NAT Gateway Create Route Table Create Security Group "
 },
 {
 	"uri": "/6-deploywebtier/6.2-uploadcodetos3/",

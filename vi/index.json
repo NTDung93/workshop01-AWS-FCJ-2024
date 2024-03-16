@@ -67,7 +67,7 @@
 	"title": "Các bước chuẩn bị",
 	"tags": [],
 	"description": "",
-	"content": "Các bước chuẩn bị Trong section 2 này, chúng ta sẽ cùng nhau setup những thứ quan trọng và cần thiết để thực hiện workshop này.\nNội dung Clone clode từ GitHub Tạo S3 Bucket Tạo EC2 role Tạo VPC Tạo Subnet Tạo Internet Gateway Tạo NAT Gateway Tạo Route Table Tạo Security Group "
+	"content": "Trong section 2 này, chúng ta sẽ cùng nhau setup những thứ quan trọng và cần thiết để thực hiện workshop này.\nNội dung Clone clode từ GitHub Tạo S3 Bucket Tạo EC2 role Tạo VPC Tạo Subnet Tạo Internet Gateway Tạo NAT Gateway Tạo Route Table Tạo Security Group "
 },
 {
 	"uri": "/vi/4-deployapptier/4.2-connectec2/",
